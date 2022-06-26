@@ -1,13 +1,62 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --primary: black;
+  --secondary: #bfc2c5;
+  --accent: #ffe047;
+} 
+
+/* * {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+/* html, body {
+  height: 100%;
+} */
+
+body {
+  background-image: url('../src/assets/images/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  color: var(--primary);
+  font-family: 'Mulish', sans-serif;
+  /* display: flex;
+  flex-direction: column; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
+
+li {
+  display: inline-flex;
+  padding: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 25px;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  z-index: -1;
+  background-color: rgba(191, 194, 197, 0.9);
+  border-radius: 2px;
+  transform: rotate(-5deg);
+}
+
+
+
