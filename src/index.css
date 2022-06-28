@@ -19,6 +19,7 @@ body {
   color: var(--primary);
   font-family: 'Mulish', sans-serif;
   height: 100vh;
+  list-style: none;
 }
 
 /* Navigation Start */
@@ -41,7 +42,9 @@ body {
   border-radius: 2px;
   transform: rotate(-4deg);
 }
+/* Navigation End */
 
+/* About Start */
 #overlay-text {
   position: relative;
   color: var(--accent);
@@ -65,61 +68,5 @@ body {
   z-index: -1;
   transform: rotate(.7deg);
 }
-/* Navigation End */
-
-/* About Start */
-/* .container {
-  white-space: nowrap;
-}
-#intro {
-  position: fixed;
-  top: 35%;
-  left: 41%;
-  transform: translate(-35%, -41%);
-  font-size: 1.6rem;
-  font-weight: 700;
-}
-
-#intro-name {
-  font-size: 4rem;
-  font-weight: 900;
-}
-
-#intro-title {
-  position: fixed;
-  display: inline-block;
-  top: 45%;
-  left: 58%;
-  transform: translate(-45%, -58%);
-  font-size: 1.7rem;
-  font-weight: 700;
-  color: var(--accent);
-}
-
-#dark-overlay {
-  position: absolute;
-  display: inline-block;
-  background-color: var(--primary);
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin-left: -6px;
-  margin-right: -6px;
-  margin-top: -1px;
-  margin-bottom: -4px;
-  z-index: -1;
-  transform: rotate(.7deg);
-}
-
-p {
-  position: fixed;
-  top: 52.5%;
-  left: 62.5%;
-  transform: translate(-52.5%, -62.5%);
-  font-size: 1.55rem;
-  font-weight: 700;
-  text-align: right;
-} */
 
 /* About End */
