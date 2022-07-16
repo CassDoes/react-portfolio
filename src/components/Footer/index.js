@@ -4,10 +4,9 @@ function Footer() {
   return (
 
 
-  <footer class="h-10 mt-12 text-end mr-7 font-bold">CassDoes.com</footer>
+  <footer className='fixed bottom-0'>CassDoes.com</footer>
 
   );
 }
-
 
 export default Footer;
