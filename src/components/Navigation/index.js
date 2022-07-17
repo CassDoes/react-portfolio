@@ -1,31 +1,60 @@
+import React from "react";
+import { Icon } from '@iconify/react';
 import { Link } from 'react-router-dom';
 
-const Navigation = () => {
+const Navigation = ({ fixed }) => {
+  const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
-    
-  <nav className='fixed top-0'>
-    <div className="flex justify-around mx-5 lg:justify-start mt-4">
-      <div className="hidden md:contents text-xl font-bold py-3">
+    <>
+      <nav className="relative flex flex-wrap items-center px-1 py-3 md:fixed md:top-0 md:w-full">
+        <div className="flex flex-wrap items-center w-full">
+          <div className="w-full relative flex justify-start">
+            <button
+              className="cursor-pointer px-1 py-1 mx-1 my-1 block md:hidden absolute"
+              id="hamburger"
+              type="button"
+              onClick={() => setNavbarOpen(!navbarOpen)}>
+              <Icon icon="ph:hamburger" height="30"/>
+            </button>
+          </div>
+          <div
+            className={
+              "md:flex flex-grow items-center" +
+              (navbarOpen ? " flex" : " hidden")}
+            id="example-navbar-danger">
 
-        <div className="mx-4 py-1 box">
-          <Link to="/" className="px-1" id='contents'>ABOUT</Link>
+            <ul className="flex flex-col md:flex-row list-none lg:ml-auto w-full">
+
+              <li className="nav-item mx-3">
+                <Link to="/" className="pt-12 px-3 pb-2 md:py-1 flex font-bold box">
+                  <span>ABOUT</span>
+                </Link>
+              </li>
+
+              <li className="nav-item mx-3">
+                <Link to="/" className="px-2 py-2 md:py-1 flex font-bold box">
+                  <span>CONTACT</span>
+                </Link>
+              </li>
+
+              <li className="nav-item mx-3">
+                <Link to='/portfolio' className="px-3 py-2 md:py-1 flex font-bold box">
+                  <span>PORTFOLIO</span>
+                </Link>
+              </li>
+
+              <li className="nav-item mx-3">
+                <Link to='/' className="px-3 pt-2 md:py-1 flex font-bold box">
+                  <span>RESUME</span>
+                </Link>
+              </li>
+
+            </ul>
+
+          </div>
         </div>
-
-        <div className="mx-4 py-1 box">
-          <Link to="/contact" className="px-1">CONTACT</Link>
-        </div>
-
-        <div className="mx-4 py-1 box">
-          <Link to="/portfolio" className="px-1">PORTFOLIO</Link>
-        </div>
-
-        <div className="mx-4 py-1 box">
-          <Link to="/resume" className="px-1">RESUME</Link>
-        </div>
-
-      </div>
-    </div>
-  </nav>
+      </nav>
+    </>
   );
 }
 
