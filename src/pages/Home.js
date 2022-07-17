@@ -19,7 +19,7 @@ const Home = () => {
     </div>
     
     <div className='flex justify-end'>
-      <a href="https://github.com/CassDoes/hello-world" id="github"><Icon icon="akar-icons:github-fill" height="40" /></a>
+      <a href="https://github.com/CassDoes" id="github"><Icon icon="akar-icons:github-fill" height="40" /></a>
       <a href="/" id="linkedin" className="ml-3"><Icon icon="akar-icons:linkedin-box-fill" height="40" /></a>
     </div>
     

@@ -10,7 +10,7 @@ const Portfolio = () => {
       <div className="flex justify-center w-full mt-5 lg:grid lg:grid-cols-2">
         <div className="max-w-xl px-5 py-2 mx-5" id="portfolio-box">
           <div className="font-semibold w-full mb-2">Project: Hello World</div>
-          <img src={HelloWorld} alt='hello world project'/>
+          <a href="https://ut-hello-world.herokuapp.com/"><img src={HelloWorld} alt='hello world project'/></a>
           <div className="mt-2 font-semibold">Created Using:</div>
           <div className="flex">
             <ul className="font-normal text-lg px-5">
